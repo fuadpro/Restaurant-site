@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Yesteryear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+.txt-white { color: #fff }
+.txt-red {color: red;}
+.txt-active{color: #ce3f72}
+
+html { scroll-behavior: smooth;}
+body::-webkit-scrollbar { width: .8em;}
+body::-webkit-scrollbar-thumb { background-color: #ce3f72; }
+
+.fa-chevron-circle-up { position: fixed; color: #ce3f72; text-align: center; right: 12px; bottom: 20px; font-size: 2em;}
+
+.container {  max-width: 960px;  margin: 0 auto;}
+
+header { background: url('../img/headerbg.jpg') center/cover;}
+header .container {  position: relative; min-height: 100vh;}
+header nav { position: absolute; top: 30px; right: 50%; transform: translate(50%, 0);}
+header nav ul li {  text-align: center; padding: 0 25px; font: 1em Poppins;      }
+header nav ul li a{ color: #fff; transition: .5s;}
+header nav ul li a:hover{ color: #ce3f72}
+header section { position: absolute; bottom: 50%; right: 50%; transform: translate(50%, 50%); text-align: center;}
+header section p { font: 1.1em/1.8 Roboto }
+
+h1 { font: 2.8em Poppins, sans-serif; text-transform: uppercase;}
+h2 { font: 2.4em Yesteryear, cursive; text-align: center;}
+hr { width: 108px; border: none; border-bottom: 1px solid;}
+
+span { color: #ce3f72; font-weight: 700;}
+
+main section { padding: 55px 0;}
+.nopadding {padding: 0;}
+
+.story { background: #962323;}
+.story img {width: 100%; height: 50vh; }
+.story article { text-align: center;}
+
+.recipes { background: url(../img/recept.jpg) center/cover; height: 480px;}
+.recipes p{ text-align: center; line-height: 24px;}
+
+.menu { background: #f3f4f7;}
+.menu article { padding: 30px 10px;}
+.menu h3{ margin-bottom: 20px; font: 1.05em Tahoma; text-transform: uppercase;}
+.menu h3 span {padding-left: 10px; white-space: nowrap }
+.menu p{ text-align: left;}
+
+.gallerys{ background: #f3f4f7; display: flex; flex-direction: column; gap: 5px;}
+.gallery { width: 55%; margin: 0 auto; height: 25vh;}
+
+.footer-head { width: 100%; background: #25262a; padding: 40px 10px;}
+.contact{ display: flex; flex-direction: column; justify-content: space-between; gap: 10px;}
+.contact article h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: "Roboto";
+    text-align: center;
+}
+.contact article p{
+    font-family: "Roboto";
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+}
+
+footer{ background: #16171b; padding: 15px 0;}
+
+.footer-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    padding: 15px 0;
+}
+.footer-end p{ display: inline-block; padding: 0 0 0 2px; font: 0.8em Roboto;color:  #737476;}
+.socials span{ padding: 0 10px;}
+.icon { color: #c0235a; padding: 0 10px 0 0; }
+.socials{ display: flex; flex-direction: column; gap: 20px;}
+.socials a{ color: #737476;}
+.socials i{ padding: 0 20px; font-size: 24px;}
+.socials span.last{ display: none;}
+
+
+@media only screen and (min-width: 768px) {
+    header nav { width: 100%; top: 65px; display: flex; justify-content: space-around; }
+    header nav ul li { display: inline-block; }
+    h1 { font-size: 4.5em }
+    h2 { font-size: 3.5em }
+    h4 { font-size: 1em}
+
+    main section { padding: 110px 0;}
+
+    .story img { height: 360px;}
+    .story article { width: 70%;}
+    .story-content{ display: flex; gap: 40px;}
+    .story-text{ display: flex; flex-direction: column; padding: 20px;}
+    .story-text hr{ margin-bottom: 40px;}
+    .cols { column-count: 2; column-gap: 10%;}
+    .gallerys{ display: flex;  flex-direction: row; gap: 0;}
+    .gallery { width: 20%;  height: 250px;}
+    
+    .contact{ display: flex; flex-direction: row; justify-content: space-between;}
+    .contact article{ min-width: 10%;}
+    .contact article:last-child{ min-width: 20%;}
+    .contact article h4{ margin-bottom: 40px; font-size: 22px; font-weight: 400; font-family: "Roboto"; text-align: left;}
+    .contact article p{ font-family: "Roboto"; font-size: 14px; text-align: left; margin-bottom: 15px; }
+    .footer-head article { padding: 20px 0 0 0;}
+
+    footer{ padding: 0;}
+    .footer-end { padding: 40px; display: flex; flex-direction: row; flex-wrap: wrap; gap: 0; justify-content: space-between; }
+    .socials{ display: flex; justify-content: space-between; flex-direction: row; gap: 0;}
+    .socials i{ display: inline-block; padding: 0 5px; font-size: 18px;}
+    .socials a{color: #737476;}
+    .socials a:hover{ color: #ce3f72;}
+    .socials span.last{ display: inline-block;}   
+    .socials span{ padding: 0 15px;}
+}
